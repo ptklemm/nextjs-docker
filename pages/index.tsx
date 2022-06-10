@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
+// import Test from "./test";
 
 export default function Home() {
 	return (
@@ -15,6 +17,8 @@ export default function Home() {
 					Hello! Welcome to <a href="https://nextjs.org">Next.js</a>{" "}
 					on Docker!
 				</h1>
+
+				<Link href="/test">Test</Link>
 
 				<p className={styles.description}>
 					Get started by editing{" "}
@@ -70,6 +74,8 @@ export default function Home() {
 						src="/vercel.svg"
 						alt="Vercel Logo"
 						className={styles.logo}
+						width={400}
+						height={400}
 					/>
 				</a>
 			</footer>
